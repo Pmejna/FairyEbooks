@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Homepage from '../../pages/Homepage/Homepage';
 
 const HomepageItemWrapper = styled.section`
     width: 100%;
