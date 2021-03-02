@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {withRouter} from 'react-router-dom';
 
 const HomepageItemWrapper = styled.section`
     width: 100%;
@@ -27,10 +28,10 @@ const HomepageItemText = styled.div`
     }
 `;
 
-const HomepageItem = ({title, subtitle, bgcolor, key, flexBasis}) => {
-    
+const HomepageItem = ({title, subtitle, bgcolor, key, flexBasis, history, linkUrl, match}) => {
+    console.log(linkUrl);
     return (
-        <HomepageItemWrapper key={key} flexBasis={flexBasis} bgcolor={bgcolor}>
+        <HomepageItemWrapper key={key} flexBasis={flexBasis} bgcolor={bgcolor} onClick={() => history.push(`${match.url}${linkUrl}`)}>
             <HomepageItemText title={title} subtitle={subtitle} >
                 <h2>{title}</h2>
                 <p>{subtitle}</p>
@@ -39,4 +40,4 @@ const HomepageItem = ({title, subtitle, bgcolor, key, flexBasis}) => {
     )
 };
 
-export default HomepageItem
+export default withRouter(HomepageItem)

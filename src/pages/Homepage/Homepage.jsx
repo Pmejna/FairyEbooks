@@ -19,7 +19,7 @@ const Homepage = () => {
     
     return (
         <HomepageWrapper>
-            {headerContent.map((item, index) => { return <HomepageItem title={item.title} subtitle={item.subtitle} bgcolor={item.bgc} key={item.title} flexBasis={index > 2 ? "50%" : "33%"}/>
+            {headerContent.map(({bgc, title, ...otherContent}, index) => { return <HomepageItem title={title} bgcolor={bgc} key={title} flexBasis={index > 2 ? "50%" : "33%"} {...otherContent}/>
     })}
         </HomepageWrapper>
     )

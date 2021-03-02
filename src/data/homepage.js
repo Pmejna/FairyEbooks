@@ -1,27 +1,32 @@
 export const itemsContent = [
     {
-        title: "one",
-        subtitle: "one",
-        bgc: "#EBFF63"
+        title: "Dinosaurs",
+        subtitle: "Great adventure books for every child",
+        bgc: "#EBFF63",
+        linkUrl: 'dinosaurs'
 },
     {
-        title: "two",
-        subtitle: "two",
-        bgc: "#51FFE7"
+        title: "Dragons",
+        subtitle: "Children books about dragons, knights and magic",
+        bgc: "#51FFE7",
+        linkUrl: ''
 },
     {
-        title: "three",
-        subtitle: "three",
-        bgc: "#51FF5D"
+        title: "Animals",
+        subtitle: "Books for kids about animals and nature",
+        bgc: "#51FF5D",
+        linkUrl: ''
 },
     {
-        title: "four",
-        subtitle: "four",
-        bgc: "#51A6F1"
+        title: "Therapeutic",
+        subtitle: "Best selection of therapeutic books for children",
+        bgc: "#51A6F1",
+        linkUrl: ''
 },
     {
-        title: "five",
-        subtitle: "five",
-        bgc: "#FF7B7B"
+        title: "Fairy tales",
+        subtitle: "Classic fairy tales for children, alongside with a new stories!",
+        bgc: "#FF7B7B",
+        linkUrl: ''
 },
 ];  
