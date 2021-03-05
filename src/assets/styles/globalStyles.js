@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
         max-width: 100%;
         display: block;
     }    
+    a {
+        text-decoration: none;
+        color: #ddaa34;
+    }
 `;
 
 export default GlobalStyle
