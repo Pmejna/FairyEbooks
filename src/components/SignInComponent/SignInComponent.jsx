@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import FormInput from '../FormInput/FormInput';
+import Button from '../Button/Button';
+
 const SignInComponentWrapper = styled.div`
 
 `;
@@ -31,11 +34,9 @@ class SignInComponent extends React.PureComponent {
                 <span>Sign in with your email and password</span>
 
                 <form onSubmit={this.handleSubmit}>
-                    <input name='email' type='email' value={this.state.email} required onChange={this.handleChange}/>
-                    <label>Email</label>
-                    <input name='password' type='password' value={this.state.password} required onChange={this.handleChange}/>
-                    <label>Password</label>
-                    <input type="submit"value='Submit form'/>
+                    <FormInput name='email' type='email' value={this.state.email} required={true} handleChange={this.handleChange} label='Email'/>
+                    <FormInput name='password' type='password' value={this.state.password} required handleChange={this.handleChange}/>
+                    <Button type="submit">Sign in</Button>
                 </form>
             </SignInComponentWrapper>
         )
