@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {signInWithGoogle} from '../../firebase/firebase.utils';
 
 import FormInput from '../FormInput/FormInput';
 import Button from '../Button/Button';
@@ -37,6 +38,7 @@ class SignInComponent extends React.PureComponent {
                     <FormInput name='email' type='email' value={this.state.email} required={true} handleChange={this.handleChange} label='Email'/>
                     <FormInput name='password' type='password' value={this.state.password} required handleChange={this.handleChange}/>
                     <Button type="submit">Sign in</Button>
+                    <Button onClick={signInWithGoogle}>Sign in with google</Button>
                 </form>
             </SignInComponentWrapper>
         )
